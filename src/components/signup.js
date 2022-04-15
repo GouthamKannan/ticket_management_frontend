@@ -98,7 +98,7 @@ export default class Signup extends Component {
 
                         <div className = "form-group my-1" >
                             <label className = "my-2" > Role </label>
-                            <select value = {this.state.role} onChange = {evt => this.handleChange(evt)}>
+                            <select className = "form-select" value = {this.state.role} onChange = {evt => this.handleChange(evt)}>
                                 <option selected value="Manager">Manager</option>
                                 <option value="Lead">Lead</option>
                                 <option value="Developer">Developer</option>
@@ -108,7 +108,7 @@ export default class Signup extends Component {
 
                         <div className = "form-group my-1" >
                             <label className = "my-2" > User type </label>
-                            <select value = {this.state.user_type} onChange = {evt => this.handleChange(evt)}>
+                            <select className = "form-select" value = {this.state.user_type} onChange = {evt => this.handleChange(evt)}>
                                 <option selected value="Admin">Admin</option>
                                 <option value="User">User</option>
                             </select>
