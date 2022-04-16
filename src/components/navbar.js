@@ -48,7 +48,7 @@ export default class Navbar extends Component {
 								Create Ticket
 							</NavLink>
 						</li>
-						{(this.state.user_type==="admin") &&
+						{(this.state.user_type==="admin" || this.state.user_type==="Admin") &&
 						<>
 							<li>
 								<NavLink to={"/manage-projects/" + this.state.user_type} className="nav-link" activeClassName="active">
